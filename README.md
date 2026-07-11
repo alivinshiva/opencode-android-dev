@@ -430,6 +430,23 @@ du -sh /sdcard/* | sort -rh | head -10
 
 Found a fix or improvement? Open an issue or PR. If you found a way to make this even more unnecessarily complex, I want to hear about it.
 
+## A Message to New Developers
+
+Listen up, junior. I know you scrolled to this repo hoping to find a nice `npm install && npm start` button. Maybe a Docker one-liner. Maybe a "Deploy to Heroku" badge.
+
+**This is not that.**
+
+This guide assumes you know what a terminal is (and it's not a movie theater). It assumes you've stared at an error message and thought "hmm, interesting" instead of panicking. It assumes you've broken something at 2am and fixed it by 4am and told nobody about it.
+
+If you don't understand what's happening here — **that's okay.** Bookmark this repo. Come back in 6 months. Come back after you've:
+- Accidentally deleted your entire project and had to rebuild it from memory
+- Read an error message so long you thought it was a novel
+- Googled something and found a Stack Overflow answer from 2014 that somehow still works
+
+One day you'll look at this and think "oh, I get it now." That day is not today. For now, just follow the instructions line by line. Copy-paste is not cheating — it's called "learning through repetition." Your future self will understand.
+
+And if you're reading this at 3am wondering if you should try it — **absolutely do.** That's how the best projects start.
+
 ## Tech Stack (a.k.a. The Duct Tape)
 
 | Tool | What It Does | Why We Need It |

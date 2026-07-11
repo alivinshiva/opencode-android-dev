@@ -3,6 +3,16 @@
 > *"What if I could run a full Linux dev environment on my phone?"*
 > — Me, at 3am, with zero good reasons to do this
 
+## Quick Start (One Command)
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/alivinshiva/opencode-android-dev/main/setup.sh | bash
+```
+
+That's it. It installs everything automatically. Skip to [Step 12](#step-12-keep-services-running-on-lock-screen) for lock screen tips.
+
+Want to see what you're running first? Read the full guide below.
+
 ## The Story
 
 Let me be honest: **I didn't invent anything here.** I just duct-taped a bunch of existing tools together and called it a "development setup." Here's the ingredient list:

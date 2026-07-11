@@ -441,6 +441,18 @@ Found a fix or improvement? Open an issue or PR. If you found a way to make this
 | ADB | Control phone from laptop | Because typing on a phone keyboard is suffering |
 | 3am energy | Glue that holds it together | Because this only makes sense at night |
 
+## Special Thanks
+
+**[OpenCode](https://opencode.ai)** — for giving unlimited credits so that I could work on my 3am bullshit thoughts that somehow found a place in my GitHub. Without you, this would have been a 2am tweet that nobody saw. Instead, it's a 400-line README that nobody will read. You made this possible, and I'm not sure if that's a compliment or an apology.
+
+**My phone** — for not catching fire while running Ubuntu, Node.js, an AI coding agent, and a Cloudflare tunnel simultaneously. You're a trooper.
+
+**Coffee** — for keeping me awake long enough to think this was a good idea.
+
+**My future self** — who will look at this repo at 10am and wonder what happened at 3am.
+
+**Anyone reading this** — you've scrolled this far, which means either this guide is actually useful, or you're procrastinating. Either way, welcome.
+
 ## Disclaimer
 
 This project was born at 3am and raised on coffee and questionable decisions. It is not affiliated with Nothing, Termux, OpenCode, Cloudflare, or any sane engineering practice. Use at your own risk. If your phone starts mining crypto, that's between you and your therapist.

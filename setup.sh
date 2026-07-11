@@ -11,6 +11,9 @@
 
 set -e
 
+# Error trap
+trap 'echo -e "\n${RED}[FAILED]${NC} Something went wrong at line $LINENO."; echo -e "${YELLOW}The automatic installer gave up on you. But don'\''t worry —${NC}"; echo -e "${YELLOW}the manual guide in the README is always there for you."; echo -e "${YELLOW}Think of it as a breakup: the script left, but the docs stayed.${NC}"; echo -e "${YELLOW}Open the README and follow the steps one by one.${NC}\n"; exit 1' ERR
+
 # Colors
 RED='\033[0;31m'
 GREEN='\033[0;32m'
@@ -232,4 +235,10 @@ echo ""
 echo "  ssh root@localhost -o ProxyCommand=\"cloudflared access tcp --hostname YOUR-URL.trycloudflare.com\" -p 8022"
 echo ""
 echo -e "${CYAN}Happy coding! Remember: this was all built at 3am.${NC}"
+echo ""
+echo -e "${YELLOW}P.S. If this script failed, congratulations — you've discovered${NC}"
+echo -e "${YELLOW}the fun part of being a developer. Don't worry, follow the${NC}"
+echo -e "${YELLOW}manual guide in the README. Step by step. You'll learn more${NC}"
+echo -e "${YELLOW}that way anyway. The script is for the impatient. The manual${NC}"
+echo -e "${YELLOW}guide is for the enlightened.${NC}"
 echo ""

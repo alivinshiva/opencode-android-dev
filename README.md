@@ -16,6 +16,26 @@ Let me be honest: **I didn't invent anything here.** I just duct-taped a bunch o
 
 None of these tools were designed to work together. I just refused to accept that they shouldn't.
 
+## Credit Where Credit Is Due
+
+**The plan was mine.** The execution? That was someone else's problem.
+
+This entire README, every single command, every error fix, every workaround — was written by an AI. I just pointed at the screen and said *"make it work."* And it did. On the first try? Absolutely not. But eventually.
+
+Think of it like this:
+- **Me:** "I want OpenCode on my phone"
+- **AI:** "Here are 47 steps, 12 error fixes, and a prayer"
+- **Me:** "Cool, I'll just copy-paste everything"
+- **AI:** *writes 400+ lines of documentation*
+- **Me:** "Can you also make it funny?"
+- **AI:** "I'm a language model, not a comedian. But okay."
+
+**Roles:**
+- 🧠 **Me** — Had the idea, broke things, asked "why isn't this working"
+- 🤖 **AI** — Did literally everything else
+
+If this guide helps you, thank the AI. If it breaks your phone, that's still my fault.
+
 ## What You'll Get
 
 - Full Ubuntu Linux environment on your Android phone

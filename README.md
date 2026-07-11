@@ -5,9 +5,13 @@
 
 ## Quick Start (One Command)
 
-```bash
+Just open Termux and paste this:
+
+```
 curl -fsSL https://raw.githubusercontent.com/alivinshiva/opencode-android-dev/main/setup.sh | bash
 ```
+
+> **If the script fails** — that's okay. It means you're about to learn something. Follow the manual guide below step by step. The script is for the impatient. The manual guide is for the enlightened.
 
 That's it. It installs everything automatically. Skip to [Step 12](#step-12-keep-services-running-on-lock-screen) for lock screen tips.
 

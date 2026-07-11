@@ -1,22 +1,46 @@
 # OpenCode on Android - Complete Setup Guide
 
-Turn your Android phone into a portable Linux development server with [OpenCode](https://opencode.ai) AI coding agent.
+> *"What if I could run a full Linux dev environment on my phone?"*
+> — Me, at 3am, with zero good reasons to do this
+
+## The Story
+
+Let me be honest: **I didn't invent anything here.** I just duct-taped a bunch of existing tools together and called it a "development setup." Here's the ingredient list:
+
+- **Termux** — A terminal emulator that somehow runs Linux on Android
+- **proot-distro** — Runs Ubuntu inside Termux without root access (yes, it's as hacky as it sounds)
+- **OpenCode** — An AI coding agent that now lives on my phone for some reason
+- **Cloudflare Tunnel** — Makes my phone accessible from the internet like it's a server
+- **ADB** — Let me type commands from my laptop because typing on a phone keyboard is pain
+- **3am energy** — The real MVP
+
+None of these tools were designed to work together. I just refused to accept that they shouldn't.
 
 ## What You'll Get
 
-- Full Ubuntu Linux environment on Android
-- OpenCode AI coding agent running on your phone
-- SSH access from any laptop (like an EC2 instance)
+- Full Ubuntu Linux environment on your Android phone
+- OpenCode AI coding agent running natively on ARM64
+- SSH access from any laptop (like an EC2 instance, but it's a phone)
 - Public URL for your dev server via Cloudflare Tunnel
-- All through Termux + proot-distro (no root required)
+- A story to tell at parties (if you go to the right kind of parties)
+- Bragging rights that your phone is now a server
+
+## Is This a Good Idea?
+
+**For development and testing:** Absolutely. It works way better than it has any right to.
+
+**For production:** Please don't. Your phone will overheat, the battery will die, and Cloudflare will judge you.
+
+**For showing off to friends:** 10/10, highly recommend.
 
 ## Prerequisites
 
 - Android phone with USB debugging enabled
 - [Termux](https://f-droid.org/en/packages/com.termux/) (install from F-Droid, not Play Store)
-- A laptop with ADB installed (for initial setup)
+- A laptop with ADB installed (for initial setup, or just type everything on the phone like a brave soul)
 - ~1GB free storage
 - WiFi connection
+- A questionable sense of what constitutes a "valid use of time"
 
 ## Step 1: Install Termux & Grant Storage Access
 
@@ -384,8 +408,23 @@ du -sh /sdcard/* | sort -rh | head -10
 
 ## Contributing
 
-Found a fix or improvement? Open an issue or PR.
+Found a fix or improvement? Open an issue or PR. If you found a way to make this even more unnecessarily complex, I want to hear about it.
+
+## Tech Stack (a.k.a. The Duct Tape)
+
+| Tool | What It Does | Why We Need It |
+|------|-------------|----------------|
+| Termux | Terminal emulator on Android | Because Android doesn't have a real shell |
+| proot-distro | Runs Ubuntu without root | Because Android doesn't have glibc |
+| OpenCode | AI coding agent | Because why not have AI on your phone |
+| Cloudflare Tunnel | Public URL for SSH | Because your phone doesn't have a public IP |
+| ADB | Control phone from laptop | Because typing on a phone keyboard is suffering |
+| 3am energy | Glue that holds it together | Because this only makes sense at night |
+
+## Disclaimer
+
+This project was born at 3am and raised on coffee and questionable decisions. It is not affiliated with Nothing, Termux, OpenCode, Cloudflare, or any sane engineering practice. Use at your own risk. If your phone starts mining crypto, that's between you and your therapist.
 
 ## License
 
-MIT
+MIT (because even hacky projects deserve freedom)
